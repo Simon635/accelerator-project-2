@@ -73,7 +73,6 @@
   &:active {
     opacity: 0.3;
   }
-
 }
 
 .header__menu-button--open {
@@ -136,6 +135,7 @@
   flex-wrap: wrap;
   list-style-type: none;
   gap: 22px;
+  z-index: 2;
 
   &::after {
     content: "";
@@ -295,5 +295,3 @@
     }
   }
 }
-
-
