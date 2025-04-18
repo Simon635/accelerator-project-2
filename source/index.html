@@ -15,7 +15,7 @@
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
       <a class="header__link-img" href="index.html">
-        <img class="header__logo" src="/__spritemap#sprite-main-logo-view" width="142px" height="42px"
+        <img class="header__logo" src="/__spritemap#sprite-header-logo-view" width="142px" height="42px"
           type="image/svg+xml" alt="Логотип туристической компании Lifetour">
       </a>
       <ul class="header__list">
@@ -147,7 +147,159 @@
       </div>
     </section>
     <section class="tours" data-test="tours">
+      <div class="tours__container">
+        <div class="tours__title-container">
+          <h2 class="tours__title main-title">Ближайшие туры</h2>
+          <div class="tours__navigation-container">
+            <button class="tours__button slider-navigation slider-navigation--prev">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="tours__button slider-navigation slider-navigation--next">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
+        </div>
+        <div class="tours__swiper swiper">
+          <ul class="tours__swiper-wrapper swiper-wrapper">
+            <li class="tours__slide swiper-slide">
+              <picture>
+                <source width="380" height="416" type="image/webp" media="(min-width: 320px)"
+                  srcset="img/tours-1-desktop@1x.webp 1x, img/tours-1-desktop@2x.webp 2x">
 
+                <img class="tours__img" src="img/tours-1-desktop@1x.jpg" srcset="img/tours-1-desktop@2x.jpg 2x"
+                  width="380px" height="416" alt="Горы Алтайского Края">
+              </picture>
+              <div class="tours__content">
+                <div class="tours__place-container">
+                  <p class="tours__location">Кавказ</p>
+                  <div class="tours__time-container">
+                    <p class="tours__time tours__time--day">4 дня</p>
+                    <p class="tours__time tours__time--night">3 ночи</p>
+                  </div>
+                </div>
+                <h3 class="tours__card-title">Путешествие
+                  вокруг Эльбруса</h3>
+                <dl class="tours__info">
+                  <dt class="tours__complexity-title">Сложность:</dt>
+                  <dd class="tours__complexity">
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--inactive"></span>
+                  </dd>
+                  <dt class="tours__date-title">Даты набора:</dt>
+                  <dd class="tours__date">12.06–19.06</dd>
+                  <dt class="tours__group-title">Группа:</dt>
+                  <dd class="tours__group">до 15 чел.</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__slide swiper-slide">
+              <picture>
+                <source width="380" height="416" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/tours-2-desktop@1x.webp 1x, img/tours-2-desktop@2x.webp 2x">
+
+                <img class="tours__img" src="img/tours-2-desktop@1x.jpg" srcset="img/tours-2-desktop@2x.jpg 2x"
+                  width="380px" height="416" alt="Горы Алтайского Края">
+              </picture>
+              <div class="tours__content">
+                <div class="tours__place-container">
+                  <p class="tours__location">Алтай</p>
+                  <div class="tours__time-container">
+                    <p class="tours__time tours__time--day">14 дней</p>
+                    <p class="tours__time tours__time--night">13 ночей</p>
+                  </div>
+                </div>
+                <h3 class="tours__card-title">Путь к подножию
+                  Белухи</h3>
+                <dl class="tours__info">
+                  <dt class="tours__complexity-title">Сложность:</dt>
+                  <dd class="tours__complexity">
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--inactive"></span>
+                  </dd>
+                  <dt class="tours__date-title">Даты набора:</dt>
+                  <dd class="tours__date">14.06–23.06</dd>
+                  <dt class="tours__group-title">Группа:</dt>
+                  <dd class="tours__group">до 25 чел.</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__slide swiper-slide">
+              <picture>
+                <source width="380" height="416" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/tours-3-desktop@1x.webp 1x, img/tours-3-desktop@2x.webp 2x">
+
+                <img class="tours__img" src="img/tours-3-desktop@1x.jpg" srcset="img/tours-3-desktop@2x.jpg 2x"
+                  width="380px" height="416" alt="Горы Алтайского Края">
+              </picture>
+              <div class="tours__content">
+                <div class="tours__place-container">
+                  <p class="tours__location">Адыгея</p>
+                  <div class="tours__time-container">
+                    <p class="tours__time tours__time--day">7 дней</p>
+                    <p class="tours__time tours__time--night">6 ночей</p>
+                  </div>
+                </div>
+                <h3 class="tours__card-title">Через Фишт<br>к Чёрному морю и обратно</h3>
+                <dl class="tours__info">
+                  <dt class="tours__complexity-title">Сложность:</dt>
+                  <dd class="tours__complexity">
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--inactive"></span>
+                  </dd>
+                  <dt class="tours__date-title">Даты набора:</dt>
+                  <dd class="tours__date">15.07–19.07</dd>
+                  <dt class="tours__group-title">Группа:</dt>
+                  <dd class="tours__group">до 22 чел.</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="tours__slide swiper-slide">
+              <picture>
+                <source width="380" height="416" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/tours-4-desktop@1x.webp 1x, img/tours-4-desktop@2x.webp 2x">
+
+                <img class="tours__img" src="img/tours-4-desktop@1x.jpg" srcset="img/tours-4-desktop@2x.jpg 2x"
+                  width="380px" height="416" alt="Горы Алтайского Края">
+              </picture>
+              <div class="tours__content">
+                <div class="tours__place-container">
+                  <p class="tours__location">Урал</p>
+                  <div class="tours__time-container">
+                    <p class="tours__time tours__time--day">9 дней</p>
+                    <p class="tours__time tours__time--night">10 ночей</p>
+                  </div>
+                </div>
+                <h3 class="tours__card-title">Восхождение
+                  Манарага</h3>
+                <dl class="tours__info">
+                  <dt class="tours__complexity-title">Сложность:</dt>
+                  <dd class="tours__complexity">
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--active"></span>
+                  </dd>
+                  <dt class="tours__date-title">Даты набора:</dt>
+                  <dd class="tours__date">12.07–19.07</dd>
+                  <dt class="tours__group-title">Группа:</dt>
+                  <dd class="tours__group">до 7 чел.</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="tours__button-show" href="#">Показать все туры</a>
+      </div>
     </section>
   </main>
 

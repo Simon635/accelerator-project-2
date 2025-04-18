@@ -21,40 +21,62 @@
   list-style-type: none;
 }
 
-.hero__swiper-slide {
+.hero__swiper-slide.swiper-slide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
   position: relative;
-  height: auto;
+  overflow: hidden;
+}
+
+.hero__swiper-slide picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .hero__swiper-slide picture img {
   display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 568px;
+  object-fit: cover;
+  object-position: center;
+  background-color: $base-text-color;
 }
 
 .hero__slide-text-container {
-  position: absolute;
-  top: 145px;
-  left: 0;
   width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding-top: 79px;
+  padding-bottom: 96px;
   padding-right: 15px;
   padding-left: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 100px;
     padding-right: 45px;
     padding-left: 45px;
     top: 343px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 200px;
+    padding-top: 200px;
+    padding-bottom: 80px;
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
     align-items: start;
+    justify-content: start;
   }
 }
 
@@ -136,6 +158,35 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;
   }
+
+  &:hover {
+    background-color: $base-white-color;
+    color: $active-color;
+    outline: 1px solid $active-color;
+  }
+
+  &:focus-visible {
+    background-color: $base-white-color;
+    color: $active-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $active-color;
+    color: $base-white-color;
+  }
+
+  &--disabled {
+    color: $base-white-color;
+    background-color: $disabled-color;
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
+
+    &:focus-visible {
+      display: none;
+    }
+  }
 }
 
 .hero__info-list {
@@ -148,9 +199,6 @@
     gap: 10px;
     list-style-type: none;
   }
-}
-
-.hero__info-item {
 }
 
 .hero__info-text {
@@ -222,8 +270,28 @@
     width: 20px;
     height: 20px;
   }
+
+  &:hover {
+    background-color: $hover-light-grey;
+  }
+
+  &:focus-visible {
+    background-color: $colorless;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 1px;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .hero__pagination-control-active {
   background-color: $base-white-color;
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    background-color: $base-white-color;
+  }
 }
