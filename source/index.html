@@ -219,7 +219,7 @@
                     <span class="tours__star tours__star--active"></span>
                     <span class="tours__star tours__star--active"></span>
                     <span class="tours__star tours__star--active"></span>
-                    <span class="tours__star tours__star--active"></span>
+                    <span class="tours__star tours__star--inactive"></span>
                     <span class="tours__star tours__star--inactive"></span>
                   </dd>
                   <dt class="tours__date-title">Даты набора:</dt>
@@ -299,6 +299,43 @@
           </ul>
         </div>
         <a class="tours__button-show" href="#">Показать все туры</a>
+      </div>
+    </section>
+    <section class="about" data-test="about">
+      <picture>
+        <source width="660" height="498" type="image/webp" media="(min-width: 1440px)"
+          srcset="img/about-desktop@1x.webp 1x, img/about-desktop@2x.webp 2x">
+        <source width="450" height="350" type="image/webp" media="(min-width: 768px)"
+          srcset="img/about-tablet@1x.webp 1x, img/about-tablet@2x.webp 2x">
+        <source width="320" height="400" type="image/webp"
+          srcset="img/about-mobile@1x.webp 1x, img/about-mobile@2x.webp 2x">
+
+        <source width="660" height="498" type="image/jpg" media="(min-width: 1440px)"
+          srcset="img/about-desktop@1x.jpg 1x, img/about-desktop@2x.jpg 2x">
+        <source width="450" height="350" type="image/jpg" media="(min-width: 768px)"
+          srcset="img/about-tablet@1x.jpg 1x, img/about-tablet@2x.jpg 2x">
+        <img class="about__image" src="img/about-mobile@1x.jpg" srcset="img/about-mobile@2x.jpg 2x" width="320"
+          height="400" alt="Горы Камчатки">
+      </picture>
+      <div class="about__text-container">
+        <h2 class="about__title main-title">О нас</h2>
+        <ul class="about__list">
+          <li class="about__item">
+            <h3 class="about__item-title">История компании</h3>
+            <p class="about__list-text">В далёком 2000 году мы начали заниматься туризмом — походы, поездки,
+              восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали
+              компанию, чтобы показывать людям удивительные места нашей страны.
+            </p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__item-title">Наша цель</h3>
+            <p class="about__list-text">
+              Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
+              При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым
+              приключением в приятной компании.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
