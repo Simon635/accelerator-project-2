@@ -602,6 +602,29 @@
         </ul>
       </div>
     </section>
+    <section class="form">
+      <div class="form__container">
+        <div class="form__info-container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        </div>
+        <form class="form__body" action="https://echo.htmlacademy.ru" method="post" name="contact-form">
+
+          <fieldset class="form__fieldset">
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="form__input" type="tel" id="phone" name="phone" required pattern="[0-9\+\-\(\)\s]+"
+              placeholder="Телефон">
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <label class="visually-hidden" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" required placeholder="Email">
+          </fieldset>
+
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
