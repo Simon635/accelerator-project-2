@@ -42,7 +42,7 @@
       </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="hero" data-test="hero">
       <div class="hero__swiper swiper">
         <ul class="hero__swiper-wrapper swiper-wrapper">
@@ -151,10 +151,10 @@
         <div class="tours__title-container">
           <h2 class="tours__title main-title">Ближайшие туры</h2>
           <div class="tours__navigation-container">
-            <button class="tours__button slider-navigation slider-navigation--prev">
+            <button class="tours__slider-button slider-navigation tours__slider-button--prev slider-navigation--prev">
               <span class="visually-hidden">Назад</span>
             </button>
-            <button class="tours__button slider-navigation slider-navigation--next">
+            <button class="tours__slider-button slider-navigation tours__slider-button--next slider-navigation--next">
               <span class="visually-hidden">Вперед</span>
             </button>
           </div>
@@ -167,7 +167,7 @@
                   srcset="img/tours-1-desktop@1x.webp 1x, img/tours-1-desktop@2x.webp 2x">
 
                 <img class="tours__img" src="img/tours-1-desktop@1x.jpg" srcset="img/tours-1-desktop@2x.jpg 2x"
-                  width="380px" height="416" alt="Горы Алтайского Края">
+                  width="380" height="416" alt="Горы Алтайского Края">
               </picture>
               <div class="tours__content">
                 <div class="tours__place-container">
@@ -201,7 +201,7 @@
                   srcset="img/tours-2-desktop@1x.webp 1x, img/tours-2-desktop@2x.webp 2x">
 
                 <img class="tours__img" src="img/tours-2-desktop@1x.jpg" srcset="img/tours-2-desktop@2x.jpg 2x"
-                  width="380px" height="416" alt="Горы Алтайского Края">
+                  width="380" height="416" alt="Горы Алтайского Края">
               </picture>
               <div class="tours__content">
                 <div class="tours__place-container">
@@ -235,7 +235,7 @@
                   srcset="img/tours-3-desktop@1x.webp 1x, img/tours-3-desktop@2x.webp 2x">
 
                 <img class="tours__img" src="img/tours-3-desktop@1x.jpg" srcset="img/tours-3-desktop@2x.jpg 2x"
-                  width="380px" height="416" alt="Горы Алтайского Края">
+                  width="380" height="416" alt="Горы Алтайского Края">
               </picture>
               <div class="tours__content">
                 <div class="tours__place-container">
@@ -268,7 +268,7 @@
                   srcset="img/tours-4-desktop@1x.webp 1x, img/tours-4-desktop@2x.webp 2x">
 
                 <img class="tours__img" src="img/tours-4-desktop@1x.jpg" srcset="img/tours-4-desktop@2x.jpg 2x"
-                  width="380px" height="416" alt="Горы Алтайского Края">
+                  width="380" height="416" alt="Горы Алтайского Края">
               </picture>
               <div class="tours__content">
                 <div class="tours__place-container">
@@ -299,6 +299,151 @@
           </ul>
         </div>
         <a class="tours__button-show" href="#">Показать все туры</a>
+      </div>
+    </section>
+    <section class="training" data-test="training">
+      <div class=" training__container">
+        <h2 class="training__title main-title">Обучение</h2>
+        <p>Обучение проводится квалифицированными специалистами,<span></span>
+          за плечами которых десятки пройденных
+          маршрутов
+          Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <!-- Свайпер -->
+        <div class="training__swiper swiper">
+          <div class="training__swiper-container">
+            <h2 class="training__swiper-title">Наши инструкторы</h2>
+            <div class="training__navigation-container">
+              <button
+                class="tours__slider-button slider-navigation training__slider-button--prev slider-navigation--prev">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button
+                class="training__slider-button slider-navigation training__slider-button--next slider-navigation--next">
+                <span class="visually-hidden">Вперед</span>
+              </button>
+            </div>
+          </div>
+          <!-- Обертка для слайдов -->
+          <ul class="training__wrapper swiper-wrapper">
+            <!-- Слайды -->
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source width="260" height="200" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/trainer-1@1x.webp 1x, img/trainer-1@2x.webp 2x">
+
+                <img class="training__img" src="img/trainer-1@1x.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260"
+                  height="200" alt="Горы Алтайского Края">
+              </picture>
+              <div class="training__name-container">
+                <h3 class="training__name">Александр
+                  Прокофьев</h3>
+                <a class="training__social-link" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </div>
+              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит
+                природу.</p>
+            </li>
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source width="260" height="200" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/trainer-2@1x.webp 1x, img/trainer-2@2x.webp 2x">
+
+                <img class="training__img" src="img/trainer-2@1x.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260"
+                  height="200" alt="Горы Алтайского Края">
+              </picture>
+              <div class="training__name-container">
+                <h3 class="training__name">Светлана
+                  Афиногенова</h3>
+                <a class="training__social-link" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </div>
+              <p>Видеть мир вокруг, познавать его опасности, находить друг друга,
+                становиться ближе, чувствовать — в этом назначение жизни.</p>
+            </li>
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source width="260" height="200" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/trainer-3@1x.webp 1x, img/trainer-3@2x.webp 2x">
+
+                <img class="training__img" src="img/trainer-3@1x.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260"
+                  height="200" alt="Горы Алтайского Края">
+              </picture>
+              <div class="training__name-container">
+                <h3 class="training__name">Надежда
+                  Колесниченко</h3>
+                <a class="training__social-link" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </div>
+              <p>Участники говорят, что Надежда ответственная, приятная в общении,
+                и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+            </li>
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source width="260" height="200" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/trainer-4@1x.webp 1x, img/trainer-4@2x.webp 2x">
+
+                <img class="training__img" src="img/trainer-4@1x.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260"
+                  height="200" alt="Горы Алтайского Края">
+              </picture>
+              <div class="training__name-container">
+                <h3 class="training__name">Федор
+                  Кайгородов</h3>
+                <a class="training__social-link" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </div>
+              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных
+                районах Хибины, Архыз, много путешествует по Европе.</p>
+            </li>
+            <li class="training__slide swiper-slide">
+              <picture>
+                <source width="260" height="200" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/trainer-5@1x.webp 1x, img/trainer-5@2x.webp 2x">
+
+                <img class="training__img" src="img/trainer-5@1x.jpg" srcset="img/trainer-5@2x.jpg 2x" width="260"
+                  height="200" alt="Горы Алтайского Края">
+              </picture>
+              <div class="training__name-container">
+                <h3 class="training__name">Даниэль
+                  Васнецов</h3>
+                <a class="training__social-link" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </div>
+              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="training__process-container">
+          <h3 class="training__process-title">Процесс обучения</h3>
+          <ul class="training__process-list">
+            <li class="training__process-item training__process-item--map">
+              <p class="training__process-item-text">
+                Изучение спортивного туристского движения
+              </p>
+            </li>
+            <li class="training__process-item training__process-item--boots">
+              <p class="training__process-item-text">
+                Подготовка и техническое снаряжение в походах
+              </p>
+            </li>
+            <li class="training__process-item training__process-item--tree">
+              <p class="training__process-item-text">
+                Лекции<span></span>
+                по окружающей среде, экологии и гигиене
+              </p>
+            </li>
+            <li class="training__process-item training__process-item--mountain">
+              <p class="training__process-item-text">
+                Разъяснение<span></span>
+                сложности горных препятствий
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="about" data-test="about">
@@ -338,9 +483,129 @@
         </ul>
       </div>
     </section>
+    <section class="reviews">
+      <div class="reviews__title-container">
+        <h2 class="reviews__title main-title">Отзывы</h2>
+        <div class="reviews__navigation-container">
+          <button class="reviews__slider-button slider-navigation reviews__slider-button--prev slider-navigation--prev">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="reviews__slider-button slider-navigation reviews__slider-button--next slider-navigation--next">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+      </div>
+      <div class="reviews__outer">
+        <div class="reviews__slider swiper">
+          <ul class="reviews__wrapper swiper-wrapper">
+
+            <li class="reviews__slide swiper-slide">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/reviews-1-desktop@1x.webp 1x, img/reviews-1-desktop@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)"
+                  srcset="img/reviews-1-tablet@1x.webp 1x, img/reviews-1-tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp"
+                  srcset="img/reviews-1-mobile@1x.webp 1x, img/reviews-1-mobile@2x.webp 2x">
+
+                <source width="258" height="253" type="image/jpg" media="(min-width: 1440px)"
+                  srcset="img/reviews-1-desktop@1x.jpg 1x, img/reviews-1-desktop@2x.jpg 2x">
+                <source width="186" height="237" type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/reviews-1-tablet@1x.jpg 1x, img/reviews-1-tablet@2x.jpg 2x">
+                <img class="reviews__img" src="img/reviews-1-mobile@1x.jpg" srcset="img/reviews-1-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="Горы Камчатки">
+              </picture>
+              <div class="reviews__info">
+                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
+                  всему научили, все показали. Делились историями о местах, людях, культуре места.
+                  С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                  так душой
+                  и телом. Всем очень рекомендую!</p>
+                <div class="reviews__user-info-container">
+                  <h3 class="reviews__user-name">Фролов Александр</h3>
+                  <span class="reviews__user-info">38 лет, Москва</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="reviews__slide swiper-slide">
+              <picture>
+                <source width="258" height="253" type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/reviews-2-desktop@1x.webp 1x, img/reviews-2-desktop@2x.webp 2x">
+                <source width="186" height="237" type="image/webp" media="(min-width: 768px)"
+                  srcset="img/reviews-2-tablet@1x.webp 1x, img/reviews-2-tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp"
+                  srcset="img/reviews-2-mobile@1x.webp 1x, img/reviews-2-mobile@2x.webp 2x">
+
+                <source width="258" height="253" type="image/jpg" media="(min-width: 1440px)"
+                  srcset="img/reviews-2-desktop@1x.jpg 1x, img/reviews-2-desktop@2x.jpg 2x">
+                <source width="186" height="237" type="image/jpg" media="(min-width: 768px)"
+                  srcset="img/reviews-2-tablet@1x.jpg 1x, img/reviews-2-tablet@2x.jpg 2x">
+                <img class="reviews__img" src="img/reviews-2-mobile@1x.jpg" srcset="img/reviews-2-mobile@2x.jpg 2x"
+                  width="250" height="169" alt="Горы Камчатки">
+              </picture>
+              <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
+                всему научили, все показали. Делились историями о местах, людях, культуре места.
+                С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так душой
+                и телом. Всем очень рекомендую!</p>
+              <div class="reviews__user-info-container">
+                <h3 class="reviews__user-name">Фролов Александр</h3>
+                <span class="reviews__user-info">38 лет, Москва</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="galary">
+      <div class="galary__container">
+        <h2 class="galary__title main-title">Фотогалерея</h2>
+        <div>
+          <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
+            нашего сайта.</p>
+          <div class="galary__navigation-container">
+            <button class="galary__slider-button slider-navigation galary__slider-button--prev slider-navigation--prev">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="galary__slider-button slider-navigation galary__slider-button--next slider-navigation--next">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="galary__slider swiper">
+        <ul class="galary__wrapper swiper-wrapper">
+          <li class="galary__slide swiper-slide">
+            <picture>
+              <source width="223" height="418" type="image/webp"
+                srcset="img/galary-1@1x.webp 1x, img/galary-1@2x.webp 2x">
+              <img class="galary__img" src="img/galary-1@1x.jpg" srcset="img/galary-1@2x.jpg 2x" width="223"
+                height="418" alt="Горы Камчатки">
+            </picture>
+          </li>
+          <li class="galary__slide swiper-slide">
+            <div class="galary__slide-container">
+              <picture>
+                <source width="223" height="205" type="image/webp"
+                  srcset="img/galary-2@1x.webp 1x, img/galary-2@2x.webp 2x">
+                <img class="galary__img" src="img/galary-2@1x.jpg" srcset="img/galary-2@2x.jpg 2x" width="223"
+                  height="205" alt="Горы Камчатки">
+              </picture>
+              <picture>
+                <source width="223" height="205" type="image/webp"
+                  srcset="img/galary-3@1x.webp 1x, img/galary-3@2x.webp 2x">
+                <img class="galary__img" src="img/galary-3@1x.jpg" srcset="img/galary-3@2x.jpg 2x" width="223"
+                  height="205" alt="Горы Камчатки">
+              </picture>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer>
+  </footer>
   <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>

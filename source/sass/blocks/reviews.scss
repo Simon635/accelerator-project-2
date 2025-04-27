@@ -1,0 +1,137 @@
+.reviews {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 40px 45px;
+  }
+}
+
+.reviews__title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+    padding-top: 23px;
+    padding-bottom: 0;
+  }
+}
+
+.training__title .main-title__shadow-title {
+  top: 0;
+}
+
+.reviews__outer {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.reviews__slider.swiper {
+  margin: -20px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.reviews__wrapper.swiper-wrapper {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.reviews__slide.swiper-slide {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: $base-white-color;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+    padding-right: 40px;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.reviews__slide p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.reviews__info {
+
+}
+
+.reviews__user-info-container {
+}
+
+.reviews__user-name {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+
+.reviews__user-info {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.reviews__navigation-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider-navigation {
+}
+.reviews__slider-button--prev {
+}
+.slider-navigation--prev {
+}
+.visually-hidden {
+}
+.reviews__slider-button {
+}
+.reviews__slider-button--next {
+}
+

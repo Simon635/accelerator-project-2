@@ -1,0 +1,42 @@
+.galary {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.galary__container {
+  padding: 20px 15px 0;
+}
+.galary__title {
+}
+.main-title {
+}
+.galary__slider {
+}
+.swiper {
+}
+
+.galary__wrapper {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.swiper-wrapper {
+}
+.galary__slide {
+}
+
+.galary__slide-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.swiper-slide {
+}
+
+.galary__img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
